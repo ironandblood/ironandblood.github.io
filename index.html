@@ -61,7 +61,7 @@
                     <i class="fas fa-envelope"></i>
                 </a>
             </div>
-            <a href="resources/resume.pdf" download="Xiaochang_Li_Resume.pdf" class="btn-rounded-white">Download Resume</a>
+            <a href="resources/CV.pdf" download="Xiaochang_Li_Resume.pdf" class="btn-rounded-white">Download Resume</a>
         </div>
         <!-- End #lead-content -->
 
@@ -84,12 +84,14 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        Software engineer specializing in high-performance systems and infrastructure optimization. 
-                        Proven track record in latency reduction (23% at Xiaoyong PE), test automation (20% efficiency gain at TikTok), 
-                        and distributed systems. Passionate about low-level systems programming and developer productivity tooling.
+                        Software engineer specializing in high-performance systems and infrastructure optimization.
+                        Proven track record in latency reduction, test automation
+                        and distributed systems. Passionate about low-level systems programming and developer
+                        productivity tooling.
                     </p>
                     <p>
-                        Currently pursuing Master's in IT-Mobility at CMU, focusing on distributed systems performance optimization.
+                        Currently pursuing Master's in IT-Mobility at CMU, focusing on distributed systems performance
+                        optimization.
                     </p>
                 </div>
             </div>
@@ -104,7 +106,8 @@
                 <h3>Tiktok</h3>
                 <h4>Software Engineering Intern</h4>
                 <ul>
-                    <li>Built GitLab CI/CD workflows automating build, test (Pytest), and release processes, cutting end-to-end test duration by 20% (saving 250+ annual hours)</li>
+                    <li>Built GitLab CI/CD workflows automating build, test (Pytest), and release processes, cutting
+                        end-to-end test duration by 20% (saving 250+ annual hours)</li>
                     <li>Developed LLM-based DOM analysis framework generating 85% of functional test cases</li>
                     <li>Authored 200+ backend Pytest suites, increasing overall code coverage from 65% to 80%</li>
                     <li>Co-authored 50+ API specs for Stream Resource features, reducing integration friction</li>
@@ -115,7 +118,8 @@
                 <h3>Xiaoyong Private Equity Funds</h3>
                 <h4>Software Engineer Intern</h4>
                 <ul>
-                    <li>Optimized IPC for high-frequency trading by implementing DPDK/libMemif zero-copy channels, achieving 23% lower latency (2.4μs→1.84μs)</li>
+                    <li>Optimized IPC for high-frequency trading by implementing DPDK/libMemif zero-copy channels,
+                        achieving 23% lower latency (2.4μs→1.84μs)</li>
                     <li>Designed C++ pub-sub model decoupling producers/consumers, enhancing system scalability</li>
                     <li>Authored 80+ Google Test suites achieving 85% coverage for IPC libraries</li>
                     <li>Automated partner report processing pipeline (IMAP→Excel→Pandas→MySQL), saving 30min/report</li>
@@ -143,79 +147,166 @@
             <h4>M.S. Information Technology - Mobility</h4>
             <p>Relevant Coursework: Distributed Systems, Cloud Computing, Performance Engineering</p>
         </div>
-        
+
         <div class="education-block">
             <h3>Fudan University</h3>
             <span class="education-date">Sept 2020 - Aug 2024</span>
             <h4>B.S. Computer Science</h4>
             <ul>
-                <li>GPA: 3.9/4.0 | Core Courses: Data Structures & Algorithms (A), OOP (A), Computer Systems (A), Networks (A)</li>
+                <li>GPA: 90/100 | Core Courses: Data Structures & Algorithms (A), OOP (A), Computer Systems (A),
+                    Networks (A)</li>
                 <li>Honors: Outstanding Student Scholarship</li>
             </ul>
         </div>
     </div>
     <!-- End #education -->
 
+    <!-- 项目部分修改如下 -->
     <div id="projects" class="background-alt">
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
-                <!-- High-Performance IPC Framework -->
+                <!-- XV6 OS -->
                 <div class="project shadow-large">
+                    <div class="project-image">
+
+                    </div>
                     <div class="project-info">
-                        <h3>Zero-Copy IPC Framework</h3>
+                        <h3>XV6 Operating System</h3>
                         <p>
-                            C++ implementation of high-frequency trading IPC using DPDK and shared memory rings. 
-                            Achieves consistent sub-2μs latency with 10Gbps throughput. Features:
+                            Unix-like OS implementation in C++ and RISC-V assembly featuring:
                         </p>
                         <ul>
-                            <li>Lock-free ring buffers with memory pooling</li>
-                            <li>DPDK-based NIC packet processing</li>
-                            <li>Google Test coverage at 85%+</li>
+                            <li>Process/thread management with priority scheduling</li>
+                            <li>Virtual memory management with page replacement algorithms</li>
+                            <li>Ext2-style file system with journaling support</li>
+                            <li>Device drivers for UART, timer, and disk controllers</li>
                         </ul>
-                        <a href="https://github.com/yourusername/hpc-ipc" target="_blank">
+                        <div class="project-stats">
+                            <span><i class="fas fa-code"></i> 15K+ LOC</span>
+                            <span><i class="fas fa-bug"></i> 50+ Test cases</span>
+                        </div>
+                        <a href="https://github.com/ironandblood/xv6" target="_blank">
                             <i class="fab fa-github"></i> View on GitHub
                         </a>
                     </div>
                 </div>
-                
-                <!-- LLM Testing Framework -->
+
+                <!-- COOL Compiler -->
                 <div class="project shadow-large">
+                    <div class="project-image">
+
+                    </div>
                     <div class="project-info">
-                        <h3>AutoTestGen: LLM-Powered Test Automation</h3>
+                        <h3>COOL Language Compiler</h3>
                         <p>
-                            PyTorch-based framework for automated web UI test generation using DOM analysis and LLMs.
+                            Full-stack compiler for object-oriented COOL language targeting MIPS:
                         </p>
                         <ul>
-                            <li>Generates 85%+ functional test cases automatically</li>
-                            <li>Integrates with Pytest for CI/CD pipelines</li>
-                            <li>Reduces test maintenance by 40%</li>
+                            <li>Lexical analyzer with regex-based tokenization</li>
+                            <li>LR(1) parser with automatic AST generation</li>
+                            <li>Semantic analysis with type checking and inheritance</li>
+                            <li>Optimized code generation (register allocation, peephole)</li>
                         </ul>
-                        <a href="https://github.com/yourusername/autotestgen" target="_blank">
+                        <div class="project-stats">
+                            <span><i class="fas fa-tachometer-alt"></i> 30% faster than reference</span>
+                            <span><i class="fas fa-check-circle"></i> 100% test coverage</span>
+                        </div>
+                        <a href="https://github.com/ironandblood/COOL-Compiler" target="_blank">
                             <i class="fab fa-github"></i> View on GitHub
                         </a>
                     </div>
                 </div>
-                
-                <!-- Distributed Data Platform -->
+
+                <!-- CPU Design -->
                 <div class="project shadow-large">
+                    <div class="project-image">
+
+                    </div>
                     <div class="project-info">
-                        <h3>Distributed Data Platform</h3>
+                        <h3>Pipelined CPU with I/O System</h3>
                         <p>
-                            Spark-based data processing pipeline for real-time public safety analytics.
+                            RISC processor implemented in Verilog with peripheral integration:
                         </p>
                         <ul>
-                            <li>5-node Hadoop/HDFS cluster handling 1TB+ daily data</li>
-                            <li>Spark RDD pipelines with Python ingestion layer</li>
-                            <li>Kafka integration for stream processing</li>
+                            <li>5-stage pipeline with hazard detection/forwarding</li>
+                            <li>VGA controller with framebuffer support</li>
+                            <li>Memory-mapped I/O for peripherals</li>
+                            <li>Interrupt controller with priority handling</li>
                         </ul>
-                        <a href="https://github.com/yourusername/distributed-data" target="_blank">
+                        <div class="project-stats">
+                            <span><i class="fas fa-microchip"></i> 150 MHz max frequency</span>
+                            <span><i class="fas fa-project-diagram"></i> 15K gates</span>
+                        </div>
+                        <a href="https://github.com/ironandblood/Arc" target="_blank">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Few-shot Learning -->
+                <div class="project shadow-large">
+                    <div class="project-image">
+
+                    </div>
+                    <div class="project-info">
+                        <h3>Few-shot Image Classification</h3>
+                        <p>
+                            Vision Transformer adaptation for low-data scenarios:
+                        </p>
+                        <ul>
+                            <li>Custom meta-learning training pipeline</li>
+                            <li>Knowledge distillation from ResNet-152</li>
+                            <li>Data augmentation with MixUp and CutMix</li>
+                            <li>Quantization-aware training for edge deployment</li>
+                        </ul>
+                        <div class="project-stats">
+                            <span><i class="fas fa-chart-line"></i> 92% 5-way 5-shot accuracy</span>
+                            <span><i class="fas fa-weight"></i>
+                                <1M parameters</span>
+                        </div>
+                        <a href="https://github.com/ironandblood/Few-shot" target="_blank">
                             <i class="fab fa-github"></i> View on GitHub
                         </a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- 研究部分 -->
+    <div id="researches" class="background-alt">
+        <h2 class="heading">Research</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+
+                    </div>
+                    <div class="project-info">
+                        <h3>Dynamic LoRA Composition for Universal IE</h3>
+                        <p>
+                            Novel approach for information extraction using modular LLM adaptation:
+                        </p>
+                        <ul>
+                            <li>Task-adaptive LoRA module combination mechanism</li>
+                            <li>Cross-task knowledge transfer via attention routing</li>
+                            <li>Unified schema representation for 12 IE subtasks</li>
+                            <li>90% parameter efficiency vs full fine-tuning</li>
+                        </ul>
+                        <div class="project-stats">
+                            <span><i class="fas fa-trophy"></i> 3.5% F1 improvement</span>
+                            <span><i class="fas fa-bolt"></i> 40% faster convergence</span>
+                        </div>
+                        <a href="https://github.com/ironandblood/loracomposition" target="_blank">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     </div>
     <!-- End #projects -->
 
@@ -233,7 +324,7 @@
                     <li>X86 Assembly</li>
                 </ul>
             </div>
-            
+
             <div class="skills-category">
                 <h3><i class="fas fa-cogs"></i> Frameworks</h3>
                 <ul>
@@ -244,7 +335,7 @@
                     <li>Kafka</li>
                 </ul>
             </div>
-            
+
             <div class="skills-category">
                 <h3><i class="fas fa-toolbox"></i> Infrastructure</h3>
                 <ul>
@@ -315,4 +406,5 @@
         document.getElementById("current-year").innerText = new Date().getFullYear();
     </script>
 </body>
+
 </html>
